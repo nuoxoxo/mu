@@ -40,7 +40,7 @@
 		let BtnGenKey = document.getElementById('btn-generate-key') as HTMLButtonElement
 		// console.log(MusicKeys)
 
-		let KeyNames = Object.keys(MusicKeys).slice(0, 7)
+		let KeyNames = Object.keys(MusicKeys).slice(1, 7)
 		console.log(KeyNames)
 		let RandomKeyName = KeyNames[Math.floor(Math.random() * KeyNames.length)]
 		let RandomKeyItem = MusicKeys[RandomKeyName]
