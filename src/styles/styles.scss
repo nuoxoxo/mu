@@ -50,6 +50,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
+  width: $BTN-SIZE-05;
+  height: $BTN-SIZE-05;
 }
 
 .btn-selection {
