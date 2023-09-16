@@ -93,6 +93,7 @@
 		let btns = document.querySelectorAll(".btn-selection") as HTMLButtonElement
 		btns.forEach((btn) => {
 			btn.addEventListener('click', (e) => {
+				e.preventDefault()
 				let res = btn.innerText === CurrentKeyItem.major || btn.innerText === CurrentKeyItem.minor
 				document.body.style.backgroundColor = res ? 'green' : 'red'
 				console.log(res, btn.innerText, CurrentKeyItem.major, CurrentKeyItem.minor)
