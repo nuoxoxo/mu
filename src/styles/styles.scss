@@ -24,7 +24,7 @@ body {
   align-items: center;
 }
 
-img {
+.key-logo-div {
   margin-top: 10px;
   height: 200px;
 }
@@ -58,7 +58,7 @@ button {
 
 
 @media only screen and (max-width: 768px) {
-  img {
+  .key-logo-div {
     height: $H-MOBILE;
   }
 }
