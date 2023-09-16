@@ -3,7 +3,7 @@ $H-MOBILE: 230px;
 
 $GB: #000000;
 $TXT: #ffffff;
-$TXT-SIZE: 64px;
+$TXT-SIZE: 32px;
 $TXT-SIZE-05: calc($TXT-SIZE/2);
 $BTN-SIZE: 42px;
 $BTN-SIZE-05: calc($BTN-SIZE/2);
@@ -24,9 +24,9 @@ body {
   align-items: center;
 }
 
-#key-logo-div {
+img {
   margin-top: 10px;
-  height: $H-FULL;
+  height: 200px;
 }
 
 button {
@@ -41,14 +41,25 @@ button {
   cursor:pointer;
 }
 
-.btn-smalle-choice {
-  width:$BTN-SIZE;
-  height:$BTN-SIZE;
-  display:none
+.btn-selection-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.btn-selection {
+
+  width:calc($BTN-SIZE-BIG - 36px);
+  height:calc($BTN-SIZE-BIG - 36px);
+  font-size: $TXT-SIZE-05;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+/*
 @media only screen and (max-width: 768px) {
-  #key-logo-img {
+  img {
     height: $H-MOBILE;
   }
 }
+*/
