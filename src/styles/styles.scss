@@ -1,5 +1,5 @@
 $H-FULL: 600px;
-$H-MOBILE: 500px;
+$H-MOBILE: 300px;
 
 $GB: #000000;
 $TXT: #ffffff;
@@ -53,9 +53,5 @@ button {
 @media only screen and (max-width: 768px) {
   img {
     height: $H-MOBILE;
-  }
-  button {
-    width: $BTN-SIZE;
-    height: $BTN-SIZE;
   }
 }
