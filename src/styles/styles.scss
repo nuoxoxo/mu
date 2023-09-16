@@ -26,7 +26,11 @@ body {
 
 img {
   margin-top: 10px;
-  height: 200px;
+  height: $H-MOBILE;
+}
+
+#key-logo-div {
+  margin-top: calc($TXT-SIZE - 10px);
 }
 
 button {

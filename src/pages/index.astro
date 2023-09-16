@@ -67,11 +67,12 @@
 		//	Generate a pool of choices of size 4
 		let MajorMinoPairArray = [[Major, Minor]]
 		console.log(MajorMinoPairArray)
-		let TempArrayMinusCurrentKeyName = [... KeyNames]
-		TempArrayMinusCurrentKeyName.splice(TempArrayMinusCurrentKeyName.indexOf(CurrentKeyName), 1)
-		console.log(TempArrayMinusCurrentKeyName)
-		TempArrayMinusCurrentKeyName = ShuffleArray(TempArrayMinusCurrentKeyName).slice(0, 3)
-		for (let k of TempArrayMinusCurrentKeyName) {
+		let TempNoCurrentKeyName = [... KeyNames]
+		console.log(TempNoCurrentKeyName)
+		TempNoCurrentKeyName.splice(TempNoCurrentKeyName.indexOf(CurrentKeyName), 1)
+		console.log(TempNoCurrentKeyName)
+		TempNoCurrentKeyName = ShuffleArray(TempNoCurrentKeyName).slice(0, 3)
+		for (let k of TempNoCurrentKeyName) {
 			let temp = [MusicKeys[k].major, MusicKeys[k].minor]
 			MajorMinoPairArray.push(temp)
 		}
