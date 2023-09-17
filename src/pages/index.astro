@@ -47,7 +47,8 @@
 		let KeyLogoDiv = document.getElementById("key-logo-div") as HTMLDivElement
 		let BtnReset = document.getElementById('btn-generate-key') as HTMLButtonElement
 
-		let KeyNames = Object.keys(MusicKeys).slice(0, 9)
+		let KeyNamesCompmete = Object.keys(MusicKeys)
+		let KeyNames = KeyNamesComplete.slice(0, 9)
 		let CurrentKeyName = KeyNames[Math.floor(Math.random() * KeyNames.length)]
 		let CurrentKeyItem = MusicKeys[CurrentKeyName]
 
@@ -67,7 +68,7 @@
 
 		//	Generate a pool of choices of size 4
 		let MajorMinoPairArray = [[Major, Minor]]
-		let TempNoCurrentKeyName = [... KeyNames]
+		let TempNoCurrentKeyName = [... KeyNamesComplete/*KeyNames*/]
 		TempNoCurrentKeyName.splice(TempNoCurrentKeyName.indexOf(CurrentKeyName), 1)
 		TempNoCurrentKeyName = ShuffleArray(TempNoCurrentKeyName).slice(0, 3)
 		for (let k of TempNoCurrentKeyName) {
