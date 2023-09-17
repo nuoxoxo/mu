@@ -48,7 +48,7 @@
 		let BtnReset = document.getElementById('btn-generate-key') as HTMLButtonElement
 
 		let KeyNamesComplete = Object.keys(MusicKeys)
-		let KeyNames = KeyNamesComplete.slice(0, 9)
+		let KeyNames = [... KeyNamesComplete].slice(0, 9)
 		let CurrentKeyName = KeyNames[Math.floor(Math.random() * KeyNames.length)]
 		let CurrentKeyItem = MusicKeys[CurrentKeyName]
 
