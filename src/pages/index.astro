@@ -77,6 +77,8 @@
 		}
 		MajorMinoPairArray = ShuffleArray(MajorMinoPairArray)
 
+		console.log(TempNoCurrentKeyName)
+
 		//	Generate 4-button set
 		let BtnSelectionDiv = document.getElementById("btn-selection-div") as HTMLDivElement
 		for (let pair of MajorMinoPairArray) {
@@ -118,7 +120,7 @@
 			document.body.style.background = 'black'
 
 			MajorMinoPairArray = [[Major, Minor]]
-			TempNoCurrentKeyName = [... KeyNames]
+			TempNoCurrentKeyName = [... KeyNamesComplete/*KeyNames*/]
 			TempNoCurrentKeyName.splice(TempNoCurrentKeyName.indexOf(CurrentKeyName), 1)
 			TempNoCurrentKeyName = ShuffleArray(TempNoCurrentKeyName).slice(0, 3)
 			for (let k of TempNoCurrentKeyName) {
