@@ -12,6 +12,7 @@ $BTN-SIZE-x2: calc($BTN-SIZE*2);
 $BTN-SIZE-BIG: 132px;
 
 body {
+
   background-color: black;
   color: white;
   display: flex;
@@ -19,7 +20,6 @@ body {
   justify-content:center;
   align-items: center;
   user-select: none;
-
 }
 
 #key-logo-div {
@@ -33,6 +33,7 @@ body {
 }
 
 #btn-generate-key {
+
   // margin-top: 8px;
   // margin-right: 10px;
   border-radius: 50%;
@@ -46,6 +47,7 @@ body {
 }
 
 .btn-selection-div {
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,6 +75,7 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+
   .key-logo-div {
     height: $H-MOBILE;
   }
