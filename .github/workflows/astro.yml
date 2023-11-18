@@ -1,4 +1,4 @@
-name: Deploy MU
+name: Deploy Mu
 
 on:
   # Trigger the workflow every time you push to the `main` branch
